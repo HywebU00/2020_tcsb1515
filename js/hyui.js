@@ -226,7 +226,7 @@ $(function() {
             ww = _window.outerWidth();
             if (ww >= wwSmall && $(this).scrollTop() > stickyMenuTop) {
                 $('.header').addClass('fixed');
-                $('.header').css('margin-top', -100);
+                $('.header').css('margin-top', menuH - hh);
                 $('.main').css('margin-top', hh);
             } else {
                 $('.header').removeClass('fixed');

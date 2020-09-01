@@ -6,7 +6,7 @@
   font-size: .938em;
     @extend %clearfix; // outline: 1px solid red;
     span {
-      color: $primaryColor;
+      color: #ff5500;
       margin: 0px .5em;
     }
     .page {
@@ -23,25 +23,25 @@
         a {
           border-radius: 30px;
           padding: 0;
-          line-height: 40px;
+          line-height: 36px;
           font-weight: 700;
           display: block;
           white-space: nowrap;
           font-size: 1em;
-          color: #3b475a;
-          background: #b3c6d4 ;
+          color: #172647;
+          border:1px solid #172647;
           // color: $color-word;
           // @include gradient (#F7F7F7, #EAEAEA, vertical);
           &:hover,
           &:focus {
-            background: $primaryColor;
+            background: #172647;
             color: #fff !important;
           }
         }
         &.active {
           a {
             color: #fff !important;
-            background: $form-focus;
+            background: #172647;
           }
         }
         %arrow {
@@ -52,7 +52,7 @@
           height: 6px;
           top: 50%;
           margin-top: -4px;
-          border: 2px solid #3b475a;
+          border: 2px solid #172647;
           border-left: none;
           border-bottom: none;
         }
@@ -125,8 +125,8 @@
         }
       }
       input[type="button"] {
-        @include gradient(#F7F7F7, #EAEAEA, vertical);
-        border: 1px solid #CCC;
+        // @include gradient(#F7F7F7, #EAEAEA, vertical);
+        // border: 1px solid #CCC;
         color: #222;
         padding: .4em 1em !important;
         min-width: 3em;

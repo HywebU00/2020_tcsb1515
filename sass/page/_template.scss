@@ -19,7 +19,7 @@ body {
 .wrapper {
   width: 100%;
   margin: 0px auto;
-  background: #f6fafe;
+  background: #f1d9d5;
   @include screen('mobile') {
     background: #FFF;
     overflow: hidden;
@@ -30,7 +30,8 @@ body {
 .container {
   padding: 0;
   margin: 0 auto;
-    max-width: $container-max; //請看_variable.scss
+  max-width: $container-max; 
+    //請看_variable.scss
   }
   .main {
     position: relative;
@@ -40,18 +41,62 @@ body {
     @include screen('mobile') {
       padding-top: 55px;
     }
+    >.container{
+      background: #fff;
+      padding: 0 0 20px 0;
+      .mpimg{
+        width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .block51,.block15{
+        padding: 0 60px;
+        @include screen('mobile') {
+          padding: 0 30px;
+        }
+      }
+      .more{
+        text-align: center;
+        margin-bottom: 64px;
+        @include screen('mobile') {
+          margin-bottom: 30px;
+        }
+        a{
+          display: inline-block;
+          padding: 0 100px;
+          min-height: 2em;
+          font-weight: bold;
+          line-height: 2em;
+          color: #172647;
+          text-align: center;
+          border: 1px solid #172647;
+          border-radius: 25px;
+          transition: all .5s;
+          &:hover{
+            background: #172647;
+            color: #fff;
+          }
+        }
+      }
+    }
     h2 {
       line-height: 1.25em;
+      text-align: center;
     }
   }
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  padding-top: 2.5em;
   @include screen('mobile') {
-    padding-top: 5em;
   }
   >.container {
-        @include gutter(); //gutter 代表左右要留白
-      }
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    h2{
+      text-align: left;
     }
+  }
+}

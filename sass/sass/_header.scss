@@ -2,9 +2,6 @@
 .header {
   position: relative;
   z-index: 99;
-  padding-bottom: 15px;
-  background: #fff;
-  border-bottom: 1px solid #ecf0f6;
   @extend %clearfix;
   @include screen('mobile') {
     position: fixed;
@@ -47,6 +44,7 @@
       max-width: $container-max;
       overflow: visible;
       position: relative; 
+      background: #f9eeec;
         // menu
         .sidebarCtrl {
           display: none;
@@ -93,7 +91,7 @@
         float: left;
         width: 450px;
         height: 65px;
-        margin: 20px 0 20px 10px;
+        margin: 32px 0 32px 30px;
         padding: 0;
         @include box-sizing;
         a {
@@ -113,9 +111,8 @@
           img {
             width: auto;
             height: auto;
-            max-height: 54px;
-            margin: 0px auto;
-            transform: scale(.8);
+            max-height: 40px;
+            margin: 8px auto;
           }
         }
       }
@@ -126,8 +123,9 @@
       width: 100%;
       box-sizing:border-box;
       position: absolute;
-      top: 35px;
-      right: 10px;
+      top: 40px;
+      right: 30px;
+      display: inline-block;
       @include screen('mobile') {
         display: none;
       }
@@ -135,26 +133,27 @@
         float: right;
         padding: 0;
         margin: 0;
-        font-size: .938em;
         list-style: none;
         li {
           float: left;
-          margin: 0 .5em 0 0;
+          margin: 0;
+          
           &:before{
-            content: "";
-            background: #477cb5;
-            width: 2px;
-            height: 18px;
-            display: inline-block;
-            transform: rotate(20deg);
-            vertical-align: sub;
-            margin-right: 4px;
+            content: "|";
+          }
+          &:first-child:before{
+            display: none;
           }
           a {
             display: inline-block;
-            padding: .5em;
+            padding: .5em .6em;
+            font-weight: 500;
             text-decoration: none;
-            @include aSetting_nocolor;
+            // @include aSetting_nocolor;
+            color: #172647;
+            &:hover,&:focus{
+              text-decoration: underline;
+            }
           }
         }
       }
@@ -351,11 +350,8 @@
   width: 100%;
   right: 0;
   top: 0;
-  border-bottom: 0;
   box-shadow: rgba(0, 0, 0, .5) 0 0 25px;
-  background: #59a5eb;
   z-index: 999;
-  padding: 0;
   @include screen('mobile') {
     background: #FFF;
   }
@@ -363,10 +359,13 @@
     position: relative;
     background: none;
     bottom: auto;
+    height: 3em;
     >ul {
+      margin-top: .5em;
       >li {
         >a {
-          color: #FFF;
+          border:0;
+          
         }
       }
     }

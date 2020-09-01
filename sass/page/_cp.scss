@@ -3,6 +3,8 @@
 h1.title, h2.title {
     line-height: 1.25em;
     margin: .4em 0;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #b3c6d4;
 }
 .cp {
     .pic {
@@ -400,7 +402,7 @@ div.tag {
     padding: 0.8em 1.5em 0.8em;
     background: #F2F2F2;
     @extend %clearfix;
-     @include box-sizing;
+    @include box-sizing;
     @include screen('mobile') {
         font-size: 0.938em;
     }

@@ -125,5 +125,8 @@ $(function() {
  });
 
 $(function() {
-
+  $(".item_search").click(function(e) {
+    $(".advsearch").slideToggle();
+    e.preventDefault();
+  });
 });
