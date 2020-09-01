@@ -15,6 +15,7 @@ a:focus {
     z-index: 9;
     color: $color-word;
     font-size: $font-size;
+    display: none;
     @include screen("mobile") {
         display: none;
     }
