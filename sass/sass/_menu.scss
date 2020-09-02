@@ -14,11 +14,17 @@
     margin: 0;
     padding: 0;
     display: inline-block;
+    @include screen('mobile') {
+      display:block;
+    }
     >li {
       display: inline-block;
       vertical-align: top;
       margin: 0 .2em;
       // min-width: 10em;
+      @include screen('mobile') {
+        margin: 0;
+      }
       >a {
         display: block;
         padding: 0 1.5em;
@@ -30,6 +36,11 @@
         border:1px solid #172647;
         border-radius: 25px;
         transition: all .5s;
+        @include screen('mobile') {
+          border-radius: 0;
+          border:0;
+          text-align: left;
+        }
         &:hover,&:focus{
           color: #172647;
           background: #fff;
@@ -68,6 +79,10 @@
       border-radius: 9px;
       animation: showMenu .3s ease-out;
       overflow: hidden;
+      @include screen('mobile') {
+        top: auto;
+        border-radius: 0;
+      }
       ul {
         top: 0;
         left: 170px;
