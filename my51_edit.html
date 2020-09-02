@@ -13,6 +13,7 @@
   <!-- slick css-->
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.css">
   <!-- hyUI css -->
   <link rel="stylesheet" href="css/hyui.css">
   <!-- favicon -->
@@ -73,9 +74,9 @@
     <!-- header End -->
     <!-- main Start -->
     <div id="center" class="main innerpage">
-      <!-- 內頁新增一個classname-->
-      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
       <div class="container">
+        <div class="innerpic"><img src="images/innerpic.jpg" alt=""></div>
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <!-- breadcrumb路徑 -->
         <div class="breadcrumb">
           <ul>
@@ -101,7 +102,7 @@
             <div class="form_grp">
               <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>上架日期：</label>
               <div class="form_content">
-                <input name="" id="" type="date">
+                <input type="text" id="text-calendar" class="calendar" placeholder="YYYY-MM-DD" />
                 <span>上架兩個月後系統將自動下架，若需再次刊登請調整上架日期。</span>
               </div>
             </div>
@@ -145,27 +146,23 @@
                   <div class="pic">
                     <span class="figure">主圖</span>
                     <a href="" class="delete">刪除</a>
-                    <img src="https://place-hold.it/120x120/666" alt="">
+                    <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                   <div class="pic">
-                    <span class="figure">主圖</span>
                     <a href="" class="delete">刪除</a>
-                    <img src="https://place-hold.it/120x120/666" alt="">
+                    <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                   <div class="pic">
-                    <span class="figure">主圖</span>
                     <a href="" class="delete">刪除</a>
-                    <img src="https://place-hold.it/120x120/666" alt="">
+                    <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                   <div class="pic">
-                    <span class="figure">主圖</span>
                     <a href="" class="delete">刪除</a>
-                    <img src="https://place-hold.it/120x120/666" alt="">
+                    <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                   <div class="pic">
-                    <span class="figure">主圖</span>
                     <a href="" class="delete">刪除</a>
-                    <img src="https://place-hold.it/120x120/666" alt="">
+                    <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                 </div>
               </div>
@@ -213,8 +210,11 @@
           <p>廉能是政府的核心價值，貪腐足以摧毀政府的形象，公務員應堅持廉潔，拒絕貪腐。<br>
             地址 : 10667 臺北市大安區大安路二段132巷35弄1號 <a href="">交通位置圖</a><br>
             電話 : (02)2325-7399 (服務時間：星期一至星期五08:00~17:00)<br>
-            最佳瀏覽解析度為1024x768以上<br>
-          更新日期 : 109-08-28 訪客人次 : 8,080,040</p>
+            最佳瀏覽解析度為1024x768以上
+          </p>
+        </div>
+        <div class="update">
+          <em>更新日期 : </em>109-08-28<br><em>訪客人次 : </em>8,080,040
         </div>
       </div>
     </footer>
@@ -228,10 +228,18 @@
   <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
   <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
   <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+  <script src="vendor/pg_calendar/js/pignose.calendar.full.min.js"></script>
   <!-- hyUI -->
   <script src="js/hyui.js"></script>
   <!-- 客製js -->
   <script src="js/customize.js"></script>
+  <script>
+    $('.calendar').pignoseCalendar({
+      lang: 'ch',
+      modal: true,
+      format: 'YYYY-MM-DD',
+    });
+  </script>
 </body>
 
 </html>

@@ -13,6 +13,7 @@
   <!-- slick css-->
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.css">
   <!-- hyUI css -->
   <link rel="stylesheet" href="css/hyui.css">
   <!-- favicon -->
@@ -73,9 +74,9 @@
     <!-- header End -->
     <!-- main Start -->
     <div id="center" class="main innerpage">
-      <!-- 內頁新增一個classname-->
-      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
       <div class="container">
+        <div class="innerpic"><img src="images/innerpic.jpg" alt=""></div>
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
         <!-- breadcrumb路徑 -->
         <div class="breadcrumb">
           <ul>
@@ -101,7 +102,7 @@
             <div class="form_grp">
               <label for="password" class="form_title">上架日期：</label>
               <div class="form_content">
-                <input name="" id="" type="date"><label for="">至</label><input name="" id="" type="date">
+                <input type="text" id="text-calendar" class="calendar" placeholder="YYYY-MM-DD" /><label for="">至</label><input type="text" id="text-calendar2" class="calendar" placeholder="YYYY-MM-DD" />
               </div>
             </div>
             <div class="form_grp">
@@ -144,17 +145,25 @@
               <li><a href="#">其他</a></li>
             </ul>
           </div>
-          <div class="album">
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag clothes">服飾類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+          <div class="album album15">
+            <div class="list_item">
+              <div class="item_tag clothes">服飾類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -166,16 +175,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag tric">3C類</span>
-                <a href=""><img src="https://place-hold.it/300x500/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag cosmetics">美容保養類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
-                <div class="item_name">
-                  <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車88件木製電動火車軌道組 電動火車 玩具 交通車88件木製電動火車軌道組 電動火車 玩具 交通車88件木製電動火車軌道組 電動火車 玩具 交通車</a>
-                </div>
                 <div class="item_date">2020/08/07</div>
+                <div class="item_name">
+                  <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
+                </div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -187,16 +204,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag cosmetics">美容保養類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag tric">3C類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -208,16 +233,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag book">圖書文具類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag clothes">服飾類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -229,16 +262,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag food">食品類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag cosmetics">美容保養類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -250,16 +291,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag sport">運動休閒類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag tric">3C類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -271,16 +320,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag pet">寵物類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag clothes">服飾類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -292,79 +349,24 @@
                 </div>
               </div>
             </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag baby">嬰幼兒與孕婦類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
+            <div class="list_item">
+              <div class="item_tag cosmetics">美容保養類</div>
+              <div class="item_pic">
+                <div class="img-container">
+                  <a href="https://place-hold.it/500x300/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x200/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/200x500/666" data-caption="第1張圖說"><img src="https://place-hold.it/200x500/666" alt=""></a>
+                </div>
+                <div class="img-container">
+                  <a href="https://place-hold.it/300x50/666" data-caption="第1張圖說"><img src="https://place-hold.it/300x50/666" alt=""></a>
+                </div>
               </div>
               <div class="item_info">
+                <div class="item_date">2020/08/07</div>
                 <div class="item_name">
                   <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
                 </div>
-                <div class="item_date">2020/08/07</div>
-                <div class="item_dep">
-                  <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
-                  <span class="ext"><em>分機</em>55505</span>
-                </div>
-                <div class="item_txt">
-                  超值88件組，情境模擬打造火車站!
-                  超豐富配件，附贈兩個人偶、電動火車。
-                  軌道為優質櫸木+安全水性塗料，安全安心。
-                </div>
-              </div>
-            </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag home">家居用品類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
-              </div>
-              <div class="item_info">
-                <div class="item_name">
-                  <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
-                </div>
-                <div class="item_date">2020/08/07</div>
-                <div class="item_dep">
-                  <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
-                  <span class="ext"><em>分機</em>55505</span>
-                </div>
-                <div class="item_txt">
-                  超值88件組，情境模擬打造火車站!
-                  超豐富配件，附贈兩個人偶、電動火車。
-                  軌道為優質櫸木+安全水性塗料，安全安心。
-                </div>
-              </div>
-            </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag home">家居用品類</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
-              </div>
-              <div class="item_info">
-                <div class="item_name">
-                  <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
-                </div>
-                <div class="item_date">2020/08/07</div>
-                <div class="item_dep">
-                  <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
-                  <span class="ext"><em>分機</em>55505</span>
-                </div>
-                <div class="item_txt">
-                  超值88件組，情境模擬打造火車站!
-                  超豐富配件，附贈兩個人偶、電動火車。
-                  軌道為優質櫸木+安全水性塗料，安全安心。
-                </div>
-              </div>
-            </div>
-            <div class="list_item nb">
-              <div class="item_pic img-container">
-                <span class="item_tag">其他</span>
-                <a href=""><img src="https://place-hold.it/300x200/666" alt=""></a>
-              </div>
-              <div class="item_info">
-                <div class="item_name">
-                  <a href="">88件木製電動火車軌道組 電動火車 玩具 交通車</a>
-                </div>
-                <div class="item_date">2020/08/07</div>
                 <div class="item_dep">
                   <span class="name"><em class="dep">綜合規劃處</em>陳小明</span>
                   <span class="ext"><em>分機</em>55505</span>
@@ -418,8 +420,11 @@
           <p>廉能是政府的核心價值，貪腐足以摧毀政府的形象，公務員應堅持廉潔，拒絕貪腐。<br>
             地址 : 10667 臺北市大安區大安路二段132巷35弄1號 <a href="">交通位置圖</a><br>
             電話 : (02)2325-7399 (服務時間：星期一至星期五08:00~17:00)<br>
-            最佳瀏覽解析度為1024x768以上<br>
-          更新日期 : 109-08-28 訪客人次 : 8,080,040</p>
+            最佳瀏覽解析度為1024x768以上
+          </p>
+        </div>
+        <div class="update">
+          <em>更新日期 : </em>109-08-28<br><em>訪客人次 : </em>8,080,040
         </div>
       </div>
     </footer>
@@ -429,14 +434,24 @@
   <!-- JQ -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <!-- 外掛 plugin js -->
+  <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+  <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
   <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
   <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
   <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
   <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+  <script src="vendor/pg_calendar/js/pignose.calendar.full.min.js"></script>
   <!-- hyUI -->
   <script src="js/hyui.js"></script>
   <!-- 客製js -->
   <script src="js/customize.js"></script>
+  <script>
+    $('.calendar').pignoseCalendar({
+      lang: 'ch',
+      modal: true,
+      format: 'YYYY-MM-DD',
+    });
+  </script>
 </body>
 
 </html>

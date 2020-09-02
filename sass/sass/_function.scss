@@ -12,8 +12,8 @@ $function_color:#888;
 div.function {
   @include box-sizing;
   @extend %clearfix;
-  margin: .5em 0;
-  position: relative;
+  margin: -50px 0 2.5em 0;
+  text-align: right;
     // ul {
     //     @include li-reset;
     //     li {
@@ -62,14 +62,27 @@ div.function {
     //     }
     // }
     .item_search{
-      position: absolute;
-      right: 0;
-      top: -50px;
       a{
         background: #8fa5b6;
         color: #fff;
         border-radius: 30px;
         padding: .5em 1.5em;
+        &:hover,&:focus,&.active{
+          background: #ff5500;
+          box-shadow:none;
+        }
+      }
+    }
+    .item_post{
+      a{
+        background: #8fa5b6;
+        color: #fff;
+        border-radius: 30px;
+        padding: .5em 1.5em;
+        &:hover,&:focus{
+          background: #ff5500;
+          box-shadow:none;
+        }
       }
     }
   }

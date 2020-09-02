@@ -82,11 +82,11 @@
           <ul>
             <li><a href="#">首頁</a></li>
             <li><a href="#">我的物品管理</a></li>
-            <li>我要送出物品</li>
+            <li>徵求物品資料</li>
           </ul>
         </div>
         <!-- h2節點 -->
-        <h2 class="title">我要送出物品</h2>
+        <h2 class="title">徵求物品資料</h2>
         <div class="notice">本網站僅提供交流平台，請勿提供不適當的物品，交流時也請保持您的禮貌，謝謝！</div>  
         <!-- QP Start -->
         <section class="qp">
@@ -95,15 +95,15 @@
             <div class="form_grp">
               <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>物品名稱：</label>
               <div class="form_content">
-                <input type="text" id="" value="">
+                <input type="text" id="" value="" placeholder="" value="">
                 <span>限20字。</span> 
               </div>
             </div>
             <div class="form_grp">
-              <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>上架日期：</label>
+              <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>張貼日期：</label>
               <div class="form_content">
-                <input type="text" id="text-calendar" class="calendar"  placeholder="YYYY-MM-DD"/>
-                <span>上架兩個月後系統將自動下架，若需再次刊登請調整上架日期。</span>
+                <input type="text" id="text-calendar" class="calendar" placeholder="YYYY-MM-DD" />
+                <span>張貼兩個月後系統將自動下架，若需再次刊登請調整張貼日期。</span>
               </div>
             </div>
             <div class="form_grp">
@@ -124,9 +124,9 @@
               </div>
             </div>
             <div class="form_grp">
-              <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>物品說明：</label>
+              <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>徵求物品說明：</label>
               <div class="form_content">
-                <textarea name="" id="" cols="30" rows="70" placeholder="請輸入物品說明"></textarea>
+                <textarea name="" id="" cols="30" rows="70" placeholder=""></textarea>
                 <span>限50字，若有其他注意事項，如物品二手程度、面交時間地點等等，請於此處描述清楚，避免索取人誤會。</span>
               </div>
             </div>
@@ -140,8 +140,8 @@
                     <input type="file" class="check_file" multiple/>
                   </div>
                 </div>
-                <span>可一次上傳多張，總張數限制五張。</span>  
-                <span>可上傳類型：jpg、jpeg、gif、png、bmp，上傳檔案大小請勿超過3mb，檔名限制45個字。</span>  
+                <span>若有徵求物品的樣式，可上傳供參考。可一次上傳多張，總張數限制五張。</span>  
+                <span>可上傳類型：jpg、jpeg、gif、png、bmp，上傳檔案大小請勿超過3mb，檔名限制45個字。</span>
                 <div class="file_list">
                   <div class="pic">
                     <span class="figure">主圖</span>
@@ -165,6 +165,23 @@
                     <img src="https://place-hold.it/110x110/666" alt="">
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="form_grp">
+              <label for="password" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>物品交流狀態：</label>
+              <div class="form_content">
+                <div class="radio_grp form_inline">
+                  <label><input name="sampleRadio3" type="radio" value="" checked="">徵求下架</label>
+                  <label><input name="sampleRadio3" type="radio" value="">已徵求完成</label>
+                </div>
+                <span>可點選徵求下架將期限內的物品下架，或已徵求到所需物品，可點選已徵求完成，或將徵求需求下架。</span>  
+              </div>
+            </div>
+            <div class="form_grp">
+              <label for="" class="form_title"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr>物品交流備註：</label>
+              <div class="form_content">
+                <textarea name="" id="" cols="30" rows="70" placeholder=""></textarea>
+                <span>可記錄本物品交流狀況，如索取人，僅供個人參考紀錄，不對外公開。</span>
               </div>
             </div>
             <div class="form_grp">

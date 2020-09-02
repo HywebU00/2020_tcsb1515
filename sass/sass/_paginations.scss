@@ -23,25 +23,27 @@
         a {
           border-radius: 30px;
           padding: 0;
-          line-height: 36px;
+          line-height: 38px;
           font-weight: 700;
           display: block;
           white-space: nowrap;
           font-size: 1em;
-          color: #172647;
-          border:1px solid #172647;
+          color: #8fa5b6;
+          border:1px solid #8fa5b6;
           // color: $color-word;
           // @include gradient (#F7F7F7, #EAEAEA, vertical);
           &:hover,
           &:focus {
             background: #172647;
             color: #fff !important;
+            border:1px solid #172647;
           }
         }
         &.active {
           a {
+            background: #8fa5b6;
             color: #fff !important;
-            background: #172647;
+            border:1px solid #8fa5b6;
           }
         }
         %arrow {
@@ -52,7 +54,7 @@
           height: 6px;
           top: 50%;
           margin-top: -4px;
-          border: 2px solid #172647;
+          border: 2px solid #8fa5b6;
           border-left: none;
           border-bottom: none;
         }
@@ -127,7 +129,7 @@
       input[type="button"] {
         // @include gradient(#F7F7F7, #EAEAEA, vertical);
         // border: 1px solid #CCC;
-        color: #222;
+        color: #fff;
         padding: .4em 1em !important;
         min-width: 3em;
         display: inline-block;
@@ -137,7 +139,7 @@
         &:hover, &:focus {
           color: #fff !important;
           background: $form-focus;
-          border: darken($form-focus, 5) solid 1px;
+          border: 0;
           box-shadow: none !important;
         }
       }

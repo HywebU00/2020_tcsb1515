@@ -12,6 +12,12 @@
   .form_grid{
     border-top: 0;
   }
+  input.calendar{
+    width: auto;
+    ~label{
+      margin: 0 6px;
+    }
+  }
 }
 .lp {
   table {
@@ -82,6 +88,147 @@
         }
       }
     }
+    .list_item{
+      display: flex;
+      flex-wrap:wrap;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 5px 5px rgba(244,238,237,.8);
+      border:1px solid rgba(244,238,237,1);
+      border-radius: 9px;
+      margin-bottom: 20px;
+      &.gooff{
+        filter: grayscale(1);
+        opacity: .6;
+      }
+      .item_pic{
+        width: 30%;
+        margin-right: 3%;
+        align-self: flex-start;
+      }
+      .item_info{
+        width: 67%;
+        .item_tag{
+          font-size: .875em;
+          border-radius:25px;
+          padding: .3em 1em;
+          color: #fff;
+          background: #ff5500;
+          margin-bottom: 8px;
+          text-align: center;
+          display: inline-block;
+        }
+        .item_status{
+          font-size: .875em;
+          border-radius:25px;
+          padding: .3em 1em;
+          color: #fff;
+          background: #172647;
+          color: #fff ;
+          float: right;
+        }
+        .item_edit{
+          font-size: .875em;
+          border-radius:25px;
+          padding: .3em 1em;
+          color: #fff;
+          background: #8fa5b6;
+          text-align: center;
+          float: right;
+          margin-right: 6px;
+          &:before{
+            content: "";
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url(../images/edit.png) no-repeat center center;
+            background-size: 16px;
+            vertical-align: sub;
+            margin-right: 4px;
+          }
+          a{
+            color: #fff;
+          }
+        }
+        .item_name{
+          font-weight: bold;
+          margin-bottom: 12px;
+          color:#172647;
+          a{
+            color:#172647;
+            &:hover,&:focus{
+              text-decoration: underline;
+            }
+          }
+        }
+        .item_date{
+          font-size: .875em;
+          color: #8d8d8d;
+        }
+        .item_dep{
+          font-size: .9375em;
+          margin-bottom: .2em;
+          color: #8d8d8d;
+          .name{
+            em.dep{
+              font-style: normal;
+              &:after{
+                content: "/";
+                margin-right: 4px;
+                margin-left: 4px;
+              }
+            }
+          }
+          .ext{
+            margin-left: 6px;
+            em{
+              font-style: normal;
+              &:after{
+                content: "/";
+                margin-right: 4px;
+                margin-left: 4px;
+              }
+            }
+          }
+        }
+        .item_txt{
+          font-size: .9375em;
+          color: #8d8d8d;
+          text-align: justify;
+        }
+        .item_reservenum{
+          color: #ff5500;
+          font-weight: bold;
+          margin-top: 10px;
+          a{
+            color: #ff5500;
+            text-decoration: underline;
+          }
+        }
+        .item_reserve{
+          padding: .5em 1.5em;
+          background: #faeeeb;
+          border-radius: 5px;
+          margin-top: .5em;
+          display: none;
+          ol{
+            border-top: 0;
+            margin: 0;
+            list-style-position: inside;
+            list-style-type: decimal;
+            font-size: .9375em;
+            li{
+              padding: .5em 0;
+              border-bottom: 1px dotted #b3c6d4;
+              &:last-child{
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+    }
   }
 }
 .album {
@@ -148,6 +295,17 @@
     .item_pic{
       position: relative;
       border-radius:5px;
+      .slick-prev,.slick-next {
+        opacity: 0!important;
+      }
+      &:hover{
+        .slick-prev,.slick-next {
+          opacity: 1!important;
+        }
+      }
+      .img-container {
+        @include aspect-ratio(4,3);
+      }
       img{
         z-index: 9;
         object-fit: cover;
@@ -162,6 +320,9 @@
         color:#172647;
         a{
           color:#172647;
+          &:hover,&:focus{
+            text-decoration: underline;
+          }
         }
       }
       .item_date{
@@ -258,4 +419,9 @@
 
   //   }
   // }
+}
+.album15{
+  .list_item{
+   padding: 10px;
+ }
 }

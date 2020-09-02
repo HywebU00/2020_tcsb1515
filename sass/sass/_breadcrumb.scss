@@ -1,6 +1,9 @@
 .breadcrumb {
   font-size: .813em;
-  margin: 0px auto 1.5em;
+  margin: -20px auto 1.5em;
+  @include screen('mobile') {
+    margin: 0 auto 1.5em;
+  }
   ul {
     @include li-reset;
     li {
