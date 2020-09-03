@@ -67,6 +67,17 @@ div.function {
         color: #fff;
         border-radius: 30px;
         padding: .5em 1.5em;
+        &:before{
+          content: "";
+          width: 18px;
+          height: 18px;
+          background: url(../images/basic/icon_search.png) no-repeat center center;
+          display: inline-block;
+          background-size: 18px;
+          filter: invert(1);
+          margin-right: 4px;
+          vertical-align: sub;
+        }
         &:hover,&:focus,&.active{
           background: #ff5500;
           box-shadow:none;

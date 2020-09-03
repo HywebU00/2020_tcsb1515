@@ -1,0 +1,69 @@
+.sp{
+	padding-bottom: 2em;
+	table {
+		td {
+			a {
+				color: #ff5500;
+				&:hover,&:focus{
+					text-decoration: underline;
+				}
+			}
+			&.num {
+				text-align: center;
+				@include screen('mobile') {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+.statistics{
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0 2em;
+	@include screen('mobile') {
+		display: block;
+	}
+	.sblock51,.sblock15{
+		width: 16%;
+		background: #fff;
+		box-shadow: 0 0 5px 5px rgba(244,238,237,.8);
+		border:1px solid rgba(244,238,237,1);
+		border-radius: 9px;
+		position: relative;
+		padding: 0 0 1em 0;
+		overflow-x: hidden;
+		text-align: center;
+		font-weight: bold;
+		span{
+			color: #fff;
+			text-align: center;
+			display: block;
+			padding: .5em 0;
+			font-size: 1.125em;
+			margin-bottom: 10px;
+		}
+		em{
+			display: block;
+			font-style: normal;
+			font-size: 3em;
+			margin-top: 14px;
+			color: #ff5500;
+			&:after{
+				content: "件";
+				font-size: .9375rem;
+				color: #142645;
+			}
+		}
+	}
+	.sblock51{
+		span{
+			background: #8fa5b6;
+		}
+	}
+	.sblock15{
+		span{
+			background: #142645;
+		}
+	}
+}
