@@ -14,89 +14,89 @@ div.function {
   @extend %clearfix;
   margin: -50px 0 2.5em 0;
   text-align: right;
-    // ul {
-    //     @include li-reset;
-    //     li {
-    //         display: block;
-    //         float: left;
-    //         margin: 0 3px 3px 0;
-    //         button,
-    //         a {
-    //             font-size: .813em;
-    //             display: block;
-    //             padding: .2em 1em;
-    //             background: $function_color;
-    //             border-color: $function_color;
-    //             color: #FFF;
-    //             border-radius: 4px;
-    //             &:hover,
-    //             &:focus {
-    //                 background: darken($aHover, 0);
-    //                 border-color: darken($aHover, 0);
-    //             }
-    //         }
-    //         // 回上一頁
-    //         &.icon_back {
-    //             a:before {
-    //                 @extend %function_before;
-    //                 background: url(../images/basic/icon_back.svg) no-repeat center center;
-    //                 background-size: cover;
-    //             }
-    //         }
-    //         // 友善列印
-    //         &.icon_print {
-    //             a:before {
-    //                 @extend %function_before;
-    //                 background: url(../images/basic/icon_print.svg) no-repeat center center;
-    //                 background-size: cover;
-    //             }
-    //         }
-    //         // 轉寄友人
-    //         &.icon_forward {
-    //             a:before {
-    //                 @extend %function_before;
-    //                 background: url(../images/basic/icon_forward.svg) no-repeat center center;
-    //                 background-size: cover;
-    //             }
-    //         }
-    //     }
-    // }
-    .item_search{
-      a{
+  ul {
+    @include li-reset;
+    li {
+      display: block;
+      float: right;
+      margin: 0 3px 3px 0;
+      button,
+      a {
+        // font-size: .813em;
+        // display: block;
+        // padding: .2em 1em;
+        // background: $function_color;
+        // border-color: $function_color;
+        // color: #FFF;
+        // border-radius: 4px;
         background: #8fa5b6;
         color: #fff;
         border-radius: 30px;
         padding: .5em 1.5em;
-        &:before{
-          content: "";
-          width: 18px;
-          height: 18px;
-          background: url(../images/basic/icon_search.png) no-repeat center center;
-          display: inline-block;
-          background-size: 18px;
-          filter: invert(1);
-          margin-right: 4px;
-          vertical-align: sub;
-        }
         &:hover,&:focus,&.active{
           background: #ff5500;
           box-shadow:none;
         }
       }
-    }
-    .item_post{
-      a{
-        background: #8fa5b6;
-        color: #fff;
-        border-radius: 30px;
-        padding: .5em 1.5em;
-        &:hover,&:focus{
-          background: #ff5500;
-          box-shadow:none;
+      &.icon_back {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_back.svg) no-repeat center center;
+          background-size: cover;
+        }
+      }
+      &.icon_print {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_print.svg) no-repeat center center;
+          background-size: cover;
+        }
+      }
+      &.icon_forward {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_forward.svg) no-repeat center center;
+          background-size: cover;
         }
       }
     }
   }
+  .item_search{
+    a{
+      background: #8fa5b6;
+      color: #fff;
+      border-radius: 30px;
+      padding: .5em 1.5em;
+      &:before{
+        content: "";
+        width: 18px;
+        height: 18px;
+        background: url(../images/basic/icon_search.png) no-repeat center center;
+        display: inline-block;
+        background-size: 18px;
+        filter: invert(1);
+        margin-right: 4px;
+        vertical-align: sub;
+      }
+      &:hover,&:focus,&.active{
+        background: #ff5500;
+        box-shadow:none;
+      }
+    }
+  }
+  .item_post{
+    a{
+      background: #8fa5b6;
+      color: #fff;
+      border-radius: 30px;
+      padding: .5em 1.5em;
+      &:hover,&:focus{
+        background: #ff5500;
+        box-shadow:none;
+      }
+    }
+  }
+}
 
 // 放進function_panel樣式
 // .function_panel {
