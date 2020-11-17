@@ -5,6 +5,9 @@ h1.title, h2.title {
   margin: .4em 0;
   padding-bottom: .4em;
   border-bottom: 2px solid #b3c6d4;
+  @include screen('mobile') {
+    border-bottom:0;
+  }
 }
 
 .cp {

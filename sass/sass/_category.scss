@@ -41,6 +41,11 @@
     //     background:$color;
     //   }
     // }
+    @include screen('mobile') {
+      background: #fff;
+      color: #172647;
+      border:2px solid #172647;
+    }
     &:hover,
     &:focus {
       color: #FFF;
@@ -51,6 +56,9 @@
       color: #FFF;
       // background: #59a5eb;
       background: #ff5500;
+      @include screen('mobile') {
+        border:2px solid #ff5500;
+      }
     }
     span {
       font-size: .813em;

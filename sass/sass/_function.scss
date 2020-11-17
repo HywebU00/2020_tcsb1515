@@ -14,6 +14,12 @@ div.function {
   @extend %clearfix;
   margin: -50px 0 2.5em 0;
   text-align: right;
+  @include screen('mobile') {
+    margin: 0 0 .5em 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #b3c6d4;
+    text-align: center;
+  }
   ul {
     @include li-reset;
     li {

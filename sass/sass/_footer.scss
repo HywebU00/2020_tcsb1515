@@ -5,21 +5,23 @@ footer {
   font-size: 0.875em;
   color: #af6f5f;
   .container {
-    padding: 35px 60px;
+    padding: 25px 60px;
     background: #ebccc4;
-    display: flex;
-    justify-content: space-between;
     @include screen('mobile') {
       display: block;
       padding: 30px;
       text-align: center;
     }
   }
-  .footer_info {
-    width: 70%;
+  .qrcode{
+    width: 150px;
+    float: left;
+    margin-right: 20px;
     @include screen('mobile') {
-      width: 100%;
+      display: none;
     }
+  }
+  .footer_info {
     p {
       line-height: 1.8em;
       margin: 0;
@@ -41,9 +43,6 @@ footer {
   }
 
   .update{
-    width: 30%;
-    text-align: right;
-    align-self: flex-end;
     font-weight: 500;
     color: #6e2714;
     @include screen('mobile') {
